@@ -107,6 +107,11 @@
   <time class="dt-published" datetime="2023-10-05T05:46:39.000Z" itemprop="datePublished">2023年10月05日</time>
 </span>
       
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/Android/">Android</a> > <a class="article-category-link" href="/categories/Android/Framework/">Framework</a>
+  </div>
+
       
       
 <a href="/2023/10/05/Framework%E6%A6%82%E8%BF%B0/#comments" class="article-comment-link">
@@ -119,7 +124,24 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="一、系统启动"><a href="#一、系统启动" class="headerlink" title="一、系统启动"></a>一、系统启动</h1><h2 id="1-1-系统启动流程"><a href="#1-1-系统启动流程" class="headerlink" title="1.1 系统启动流程"></a>1.1 系统启动流程</h2><h2 id="1-2-Init进程"><a href="#1-2-Init进程" class="headerlink" title="1.2 Init进程"></a>1.2 Init进程</h2><h2 id="1-3-Zygote进程"><a href="#1-3-Zygote进程" class="headerlink" title="1.3 Zygote进程"></a>1.3 Zygote进程</h2><h2 id="1-4-SystemServer进程"><a href="#1-4-SystemServer进程" class="headerlink" title="1.4 SystemServer进程"></a>1.4 SystemServer进程</h2><blockquote>
+<p> 这里包含了 系统服务启动流程</p>
+</blockquote>
+<h1 id="二、基础设施"><a href="#二、基础设施" class="headerlink" title="二、基础设施"></a>二、基础设施</h1><h2 id="2-1-Handler"><a href="#2-1-Handler" class="headerlink" title="2.1 Handler"></a>2.1 Handler</h2><h2 id="2-2-Binder体系"><a href="#2-2-Binder体系" class="headerlink" title="2.2 Binder体系"></a>2.2 Binder体系</h2><h2 id="2-3-AMS-服务"><a href="#2-3-AMS-服务" class="headerlink" title="2.3  AMS 服务"></a>2.3  AMS 服务</h2><p>该模块要包含 <strong>App启动流程</strong></p>
+<h2 id="2-3-WMS服务"><a href="#2-3-WMS服务" class="headerlink" title="2.3 WMS服务"></a>2.3 WMS服务</h2><h2 id="2-4-PKMS服务"><a href="#2-4-PKMS服务" class="headerlink" title="2.4 PKMS服务"></a>2.4 PKMS服务</h2><ol>
+<li>安装过程-PKMS启动后的 APK安装过程</li>
+<li>安装过程-单个APK安装过程</li>
+<li>安装过程-Dex优化处理</li>
+<li>卸载过程-单个APK卸载过程</li>
+<li>权限管理-权限申请流程</li>
+</ol>
+<h1 id="三、子系统"><a href="#三、子系统" class="headerlink" title="三、子系统"></a>三、子系统</h1><h2 id="3-1-View体系"><a href="#3-1-View体系" class="headerlink" title="3.1 View体系"></a>3.1 View体系</h2><h2 id="3-2-显示系统"><a href="#3-2-显示系统" class="headerlink" title="3.2 显示系统"></a>3.2 显示系统</h2><h3 id="3-2-N-Android开启动画"><a href="#3-2-N-Android开启动画" class="headerlink" title="3.2.N Android开启动画"></a>3.2.N Android开启动画</h3><p>&#x2F;frameworks&#x2F;base&#x2F;cmds&#x2F;bootanimation</p>
+<h2 id="3-3-事件系统"><a href="#3-3-事件系统" class="headerlink" title="3.3 事件系统"></a>3.3 事件系统</h2><h2 id="四、领域细分"><a href="#四、领域细分" class="headerlink" title="四、领域细分"></a>四、领域细分</h2><h2 id="4-1-APP保活"><a href="#4-1-APP保活" class="headerlink" title="4.1 APP保活"></a>4.1 APP保活</h2><h2 id="五、上下求索"><a href="#五、上下求索" class="headerlink" title="五、上下求索"></a>五、上下求索</h2><p>这里可以增加一些内核的东西。 </p>
+<h1 id="N、AOSP中基础知识"><a href="#N、AOSP中基础知识" class="headerlink" title="N、AOSP中基础知识"></a>N、AOSP中基础知识</h1><h3 id="Android线程模型"><a href="#Android线程模型" class="headerlink" title="Android线程模型"></a>Android线程模型</h3><p>&#x2F;system&#x2F;core&#x2F;libutils&#x2F;Threads.h</p>
+<h3 id="Android-智能指针"><a href="#Android-智能指针" class="headerlink" title="Android 智能指针"></a>Android 智能指针</h3><blockquote>
+<p><strong>10月份  Binder 对赌； PKMS总结；事件系统；显示系统总结；handler总结</strong></p>
+</blockquote>
+
         
         
           <blockquote id="copyright">
@@ -135,6 +157,8 @@
           
 
           
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Framework/" rel="tag">Framework</a></li></ul>
+
           
 
 
@@ -351,7 +375,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/123/" style="font-size: 10px;">123</a> <a href="/tags/zfc/" style="font-size: 10px;">zfc</a>
+      <a href="/tags/123/" style="font-size: 10px;">123</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Framework/" style="font-size: 10px;">Framework</a> <a href="/tags/zfc/" style="font-size: 10px;">zfc</a>
     </div>
   </div>
 
@@ -360,7 +384,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/">随想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/Framework/">Framework</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/">随想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -380,7 +404,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/123/" rel="tag">123</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zfc/" rel="tag">zfc</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/123/" rel="tag">123</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Framework/" rel="tag">Framework</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zfc/" rel="tag">zfc</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 

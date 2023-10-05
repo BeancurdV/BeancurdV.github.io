@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://beancurdv.github.io/2023/10/05/hexo-guide-md/</loc>
+    <loc>https://beancurdv.github.io/2023/10/05/Framework%E6%A6%82%E8%BF%B0/</loc>
     
     <lastmod>2023-10-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://beancurdv.github.io/2023/10/05/Framework%E6%A6%82%E8%BF%B0/</loc>
+    <loc>https://beancurdv.github.io/2023/10/05/hexo-guide-md/</loc>
     
     <lastmod>2023-10-05</lastmod>
     
@@ -60,6 +60,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://beancurdv.github.io/tags/Framework/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://beancurdv.github.io/tags/Android/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -85,6 +99,20 @@
   
   <url>
     <loc>https://beancurdv.github.io/categories/%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://beancurdv.github.io/categories/Android/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://beancurdv.github.io/categories/Android/Framework/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
