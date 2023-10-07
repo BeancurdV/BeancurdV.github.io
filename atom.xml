@@ -6,7 +6,7 @@
   <link href="https://beancurdv.github.io/atom.xml" rel="self"/>
   
   <link href="https://beancurdv.github.io/"/>
-  <updated>2023-10-06T08:24:28.864Z</updated>
+  <updated>2023-10-07T04:41:22.154Z</updated>
   <id>https://beancurdv.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OS环境搭建</title>
+    <link href="https://beancurdv.github.io/2023/10/06/OS%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://beancurdv.github.io/2023/10/06/OS%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+    <published>2023-10-06T13:23:35.000Z</published>
+    <updated>2023-10-07T04:41:22.154Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>安装vmware  + ubuntu虚拟机</li><li>安装bochs 2.7 </li><li>安装qemu</li></ol><h2 id="一、安装Ubuntu虚拟机"><a href="#一、安装Ubuntu虚拟机" class="headerlink" title="一、安装Ubuntu虚拟机"></a>一、安装Ubuntu虚拟机</h2><ol><li><p><a href="https://blog.csdn.net/m0_49762804/article/details/131966350">安装VMware</a></p></li><li><p><a href="https://blog.csdn.net/Amentos/article/details/127757692">安装Ubuntu虚拟机</a></p></li><li><p><a href="https://blog.csdn.net/m2282475145/article/details/129901601">在Ubuntu虚拟机中安装vmtools</a></p></li></ol><h2 id="二、安装bochs"><a href="#二、安装bochs" class="headerlink" title="二、安装bochs"></a>二、安装bochs</h2><blockquote><p>Bochs 是一个开源的虚拟机， 全模拟模式 ，因此速度慢。 </p><p>优点： 调试功能强。  调试汇编、GDT、IDT、分页等。</p></blockquote><p><strong>安装nasm</strong>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nasm</span><br></pre></td></tr></table></figure><p><strong>安装Bochs 依赖库</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libx11-dev libc6-dev build-essential xorg-dev libgtk2.0-dev libreadline-dev</span><br></pre></td></tr></table></figure><p><strong>配置</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure --with-x11 --with-x --enable-all-optimizations --enable-readline --enable-debugger-gui --enable-x86-debugger --enable-a20-pin --enable-fast-function-calls --enable-debugger</span><br></pre></td></tr></table></figure><p><strong>编译安装</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make -j4(-j后面跟CPU数，加快编译速度)</span><br><span class="line">sudo make install(必须root权限执行)</span><br></pre></td></tr></table></figure><h2 id="三、安装qemu"><a href="#三、安装qemu" class="headerlink" title="三、安装qemu"></a>三、安装qemu</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qemu</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;安装vmware  + ubuntu虚拟机&lt;/li&gt;
+&lt;li&gt;安装bochs 2.7 &lt;/li&gt;
+&lt;li&gt;安装qemu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;一、安装Ubuntu虚拟机&quot;&gt;&lt;a href=&quot;#一、安装Ubuntu虚拟机&quot; class=&quot;heade</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>OS概述</title>
