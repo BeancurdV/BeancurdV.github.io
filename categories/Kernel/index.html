@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <title>手写OS | BeancurdV&#39;s BLOG</title>
+  <title>category: Kernel | BeancurdV&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <meta name="description" content="An android developer">
@@ -84,150 +84,35 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-手写OS" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
+
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      手写OS
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="fa fa-date"></i>
-  <time class="dt-published" datetime="2023-10-05T08:40:53.171Z" itemprop="datePublished">2023年10月05日</time>
-</span>
-      
-  <div class="article-category">
-    <i class="fa fa-classify"></i>
-    <a class="article-category-link" href="/categories/OS/">OS</a> > <a class="article-category-link" href="/categories/OS/Linux/">Linux</a>
-  </div>
-
-      
-        <span class="article-views">
-  <i class="fa fa-views"></i>
-  <i id="busuanzi_container_page_pv">
-      <i id="busuanzi_value_page_pv"></i>
-  </i>
-</span>
-
-      
-      
-<a href="/2023/10/05/%E6%89%8B%E5%86%99OS/#comments" class="article-comment-link">
   
     
     
-    
-    
-    
-  
-  <i class="fa fa-commt"></i>
-  留言
-</a>
-
-
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="一、玩转CPU实模式"><a href="#一、玩转CPU实模式" class="headerlink" title="一、玩转CPU实模式"></a>一、玩转CPU实模式</h1><p>实现操作系统微内核</p>
-<p>汇编全貌 ， 玩转寄存器</p>
-<p>手绘堆栈，玩转系统执行流</p>
-<p>玩转函数，自构建执行流</p>
-<p>玩转软、硬盘，让OS尽情发挥</p>
-<h1 id="二、实现真正意义上的内核"><a href="#二、实现真正意义上的内核" class="headerlink" title="二、实现真正意义上的内核"></a>二、实现真正意义上的内核</h1><p>深入学习CPU段机制与保护模式</p>
-<p>编码进入保护模式，支持C语言开发与调试</p>
-<p>玩转指针</p>
-<p>编写屏幕驱动，实现内核打印函数printk</p>
-<h1 id="三、-给内核增加中断与虚拟内存管理"><a href="#三、-给内核增加中断与虚拟内存管理" class="headerlink" title="三、 给内核增加中断与虚拟内存管理"></a>三、 给内核增加中断与虚拟内存管理</h1><p>接管BIOS中断，实现时钟中断 键盘中断</p>
-<p>内存条检测，实现物理内存管理模块</p>
-<p>开启分页，实现虚拟内存管理模块</p>
-<p>带你手写协程，深入理解任务切换</p>
-<h1 id="四、-实现任务切换和文件系统"><a href="#四、-实现任务切换和文件系统" class="headerlink" title="四、 实现任务切换和文件系统"></a>四、 实现任务切换和文件系统</h1><p>进入用户态，手写系统调用，完成状态切换</p>
-<p>C语言实现硬盘驱动，实现同步、异步读写硬盘</p>
-<p>C语言实现文件系统、目录管理、文件管理</p>
-
+    <section class="archives-wrap">
+      <div class="archive-title">
         
-            <div id="toc-article">
-                
-  <div class="widget-wrap" id="toc-wrap">
-    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
-    <div class="widget">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%A9%E8%BD%ACCPU%E5%AE%9E%E6%A8%A1%E5%BC%8F"><span class="toc-text">一、玩转CPU实模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E7%8E%B0%E7%9C%9F%E6%AD%A3%E6%84%8F%E4%B9%89%E4%B8%8A%E7%9A%84%E5%86%85%E6%A0%B8"><span class="toc-text">二、实现真正意义上的内核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81-%E7%BB%99%E5%86%85%E6%A0%B8%E5%A2%9E%E5%8A%A0%E4%B8%AD%E6%96%AD%E4%B8%8E%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="toc-text">三、 给内核增加中断与虚拟内存管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81-%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E5%88%87%E6%8D%A2%E5%92%8C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">四、 实现任务切换和文件系统</span></a></li></ol>
-    </div>
-  </div>
-
-
-            </div>
-        
-        
-          <blockquote id="copyright">
-              <p>原文链接: <a href="https://beancurdv.github.io/2023/10/05/手写OS/">https://beancurdv.github.io/2023/10/05/手写OS/</a></p>
-              <p>版权声明: 转载请注明出处.</p>
-          </blockquote>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div class="article-tag-wrap">
-          
-
-          
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Kernel/" rel="tag">Kernel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OS/" rel="tag">OS</a></li></ul>
-
-          
-
-
-        </div>
-      
-      
-        
-<nav id="article-nav">
-  
-    <a href="/2023/10/05/Framework%E6%A6%82%E8%BF%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <div class="article-nav-title">
-        
-          Framework概述
+          <i class="fa fa-classify"></i>
+          Kernel
         
       </div>
+      <div class="archives">
+  
+  <ul class="archive-article archive-type-post">
+  <li class="archive-article-inner">
+    <a href="/2023/10/07/OS%E5%BE%AE%E5%86%85%E6%A0%B8/">
+      <time class="dt-published" datetime="2023-10-07T04:50:25.000Z" itemprop="datePublished">2023年10月07日</time>
+      | <span class="archive-article-title">OS微内核</span>
     </a>
-  
-  
-    <a href="/2023/10/05/OS%E6%A6%82%E8%BF%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <div class="article-nav-title">
-        
-          OS概述
-        
-      </div>
-    </a>
-  
-</nav>
-
-      
-      
-        
+  </li>
+</ul>
 
 
 
+  </div></section>
 
 
-
-
-
-      
-    </footer>
-  </div>
-</article>
 </section>
         
           <aside id="sidebar">
@@ -385,9 +270,6 @@
 
 
 
-
-  
-  
 
 
 
