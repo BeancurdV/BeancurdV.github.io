@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <title>归档 | BeancurdV&#39;s BLOG</title>
+  <title>binder目录 | BeancurdV&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <meta name="description" content="An android developer">
@@ -84,107 +84,168 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-
-  
-  
+        <section id="main"><article id="post-binder目录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
     
     
-    <section class="archives-wrap">
-      <div class="archive-title">
+      <header class="article-header">
         
-          <i class="fa fa-date"></i>
-          2023
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      binder目录
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2023-10-09T10:43:46.000Z" itemprop="datePublished">2023年10月09日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/Binder/">Binder</a> > <a class="article-category-link" href="/categories/Framework/">Framework</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2023/10/09/binder%E7%9B%AE%E5%BD%95/#comments" class="article-comment-link">
+  
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="目录内容"><a href="#目录内容" class="headerlink" title="目录内容"></a>目录内容</h1><ol>
+<li><p>Binder概述</p>
+</li>
+<li><p>Binder C测试程序体验</p>
+<ol>
+<li>ServiceManager 启动</li>
+<li>Binder Server 注册服务</li>
+<li>Binder Client 查询服务，获得Binder Proxy对象</li>
+</ol>
+</li>
+<li><p>Binder 驱动情景分析</p>
+</li>
+<li><p>Binder Transaction_Stack机制</p>
+</li>
+<li><p>Binder Server 多线程实现</p>
+</li>
+<li><p>Binder C++ 程序</p>
+</li>
+<li><p>Binder Java程序</p>
+</li>
+<li><p>回顾Binder系统</p>
+</li>
+<li><p>Binder 死亡通知</p>
+<blockquote>
+<p>既然有死亡通知，那是不是可以根据这个做App层的保活呢?</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p> 我们学习binder，到底学习的是什么？</p>
+<ol>
+<li>学习Binder的设计思想</li>
+<li>了解一些驱动的知识</li>
+<li>作为一个Android App工程师，能后看到C&#x2F;C++正确应用姿势，可以解决。</li>
+</ol>
+</blockquote>
+<h1 id="一、-Binder概述"><a href="#一、-Binder概述" class="headerlink" title="一、 Binder概述"></a>一、 Binder概述</h1><p>Binder 是Android系统中最主要的IPC方式。 无论是App与SystemServer中的核心服务通信，还是不同进程的服务之间通信，都离不开Binder。 因此作为Android开发者，有必要了解、熟悉Binder的通信原理。 </p>
+<h2 id="1-1-Binder特点"><a href="#1-1-Binder特点" class="headerlink" title="1.1 Binder特点"></a>1.1 Binder特点</h2><p>一言以蔽之： <strong>简单、高效、安全</strong>。</p>
+<p>Android系统也是使用的Linux内核，也就天然具备了 Linux中的IPC通信方式，比如：UDS (Unix Domain Socket) 、管道、消息队列和 共享内存(MemoryShare)。  </p>
+<h1 id="N、-写在最后"><a href="#N、-写在最后" class="headerlink" title="N、 写在最后"></a>N、 写在最后</h1><ol>
+<li>补充一下IPC方式及原理</li>
+</ol>
+<h3 id="什么是操作系统"><a href="#什么是操作系统" class="headerlink" title="什么是操作系统"></a>什么是操作系统</h3><p>管理资源，任务。管理的目的是 是一切<strong>有序、高效</strong>地进行。 管理活动，就有管理者和被管理者，就涉及到了<strong>权限</strong>。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E5%86%85%E5%AE%B9"><span class="toc-text">目录内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81-Binder%E6%A6%82%E8%BF%B0"><span class="toc-text">一、 Binder概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-Binder%E7%89%B9%E7%82%B9"><span class="toc-text">1.1 Binder特点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#N%E3%80%81-%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-text">N、 写在最后</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-text">什么是操作系统</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="https://beancurdv.github.io/2023/10/09/binder目录/">https://beancurdv.github.io/2023/10/09/binder目录/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/binder/" rel="tag">binder</a></li></ul>
+
+          
+
+
+        </div>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2023/10/07/OS%E5%BE%AE%E5%86%85%E6%A0%B8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">
+        
+          OS微内核
         
       </div>
-      <div class="archives">
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/09/binder%E7%9B%AE%E5%BD%95/">
-      <time class="dt-published" datetime="2023-10-09T10:43:46.000Z" itemprop="datePublished">2023年10月09日</time>
-      | <span class="archive-article-title">binder目录</span>
     </a>
-  </li>
-</ul>
-
-
   
   
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/07/OS%E5%BE%AE%E5%86%85%E6%A0%B8/">
-      <time class="dt-published" datetime="2023-10-07T04:50:25.000Z" itemprop="datePublished">2023年10月07日</time>
-      | <span class="archive-article-title">OS微内核</span>
-    </a>
-  </li>
-</ul>
+</nav>
 
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/06/OS%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-      <time class="dt-published" datetime="2023-10-06T13:23:35.000Z" itemprop="datePublished">2023年10月06日</time>
-      | <span class="archive-article-title">OS环境搭建</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/05/OS%E6%A6%82%E8%BF%B0/">
-      <time class="dt-published" datetime="2023-10-05T13:12:30.575Z" itemprop="datePublished">2023年10月05日</time>
-      | <span class="archive-article-title">OS概述</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/05/%E6%89%8B%E5%86%99OS/">
-      <time class="dt-published" datetime="2023-10-05T08:40:53.171Z" itemprop="datePublished">2023年10月05日</time>
-      | <span class="archive-article-title">手写OS</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/05/Framework%E6%A6%82%E8%BF%B0/">
-      <time class="dt-published" datetime="2023-10-05T05:46:39.000Z" itemprop="datePublished">2023年10月05日</time>
-      | <span class="archive-article-title">Framework概述</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2023/10/05/hexo-guide-md/">
-      <time class="dt-published" datetime="2023-10-05T03:19:27.000Z" itemprop="datePublished">2023年10月05日</time>
-      | <span class="archive-article-title">hexo_guide.md</span>
-    </a>
-  </li>
-</ul>
+      
+      
+        
 
 
 
-  </div></section>
 
 
+
+
+
+      
+    </footer>
+  </div>
+</article>
 </section>
         
           <aside id="sidebar">
@@ -342,6 +403,9 @@
 
 
 
+
+  
+  
 
 
 

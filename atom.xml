@@ -6,7 +6,7 @@
   <link href="https://beancurdv.github.io/atom.xml" rel="self"/>
   
   <link href="https://beancurdv.github.io/"/>
-  <updated>2023-10-07T10:44:02.987Z</updated>
+  <updated>2023-10-09T12:32:31.505Z</updated>
   <id>https://beancurdv.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>binder目录</title>
+    <link href="https://beancurdv.github.io/2023/10/09/binder%E7%9B%AE%E5%BD%95/"/>
+    <id>https://beancurdv.github.io/2023/10/09/binder%E7%9B%AE%E5%BD%95/</id>
+    <published>2023-10-09T10:43:46.000Z</published>
+    <updated>2023-10-09T12:32:31.505Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="目录内容"><a href="#目录内容" class="headerlink" title="目录内容"></a>目录内容</h1><ol><li><p>Binder概述</p></li><li><p>Binder C测试程序体验</p><ol><li>ServiceManager 启动</li><li>Binder Server 注册服务</li><li>Binder Client 查询服务，获得Binder Proxy对象</li></ol></li><li><p>Binder 驱动情景分析</p></li><li><p>Binder Transaction_Stack机制</p></li><li><p>Binder Server 多线程实现</p></li><li><p>Binder C++ 程序</p></li><li><p>Binder Java程序</p></li><li><p>回顾Binder系统</p></li><li><p>Binder 死亡通知</p><blockquote><p>既然有死亡通知，那是不是可以根据这个做App层的保活呢?</p></blockquote></li></ol><blockquote><p> 我们学习binder，到底学习的是什么？</p><ol><li>学习Binder的设计思想</li><li>了解一些驱动的知识</li><li>作为一个Android App工程师，能后看到C&#x2F;C++正确应用姿势，可以解决。</li></ol></blockquote><h1 id="一、-Binder概述"><a href="#一、-Binder概述" class="headerlink" title="一、 Binder概述"></a>一、 Binder概述</h1><p>Binder 是Android系统中最主要的IPC方式。 无论是App与SystemServer中的核心服务通信，还是不同进程的服务之间通信，都离不开Binder。 因此作为Android开发者，有必要了解、熟悉Binder的通信原理。 </p><h2 id="1-1-Binder特点"><a href="#1-1-Binder特点" class="headerlink" title="1.1 Binder特点"></a>1.1 Binder特点</h2><p>一言以蔽之： <strong>简单、高效、安全</strong>。</p><p>Android系统也是使用的Linux内核，也就天然具备了 Linux中的IPC通信方式，比如：UDS (Unix Domain Socket) 、管道、消息队列和 共享内存(MemoryShare)。  </p><h1 id="N、-写在最后"><a href="#N、-写在最后" class="headerlink" title="N、 写在最后"></a>N、 写在最后</h1><ol><li>补充一下IPC方式及原理</li></ol><h3 id="什么是操作系统"><a href="#什么是操作系统" class="headerlink" title="什么是操作系统"></a>什么是操作系统</h3><p>管理资源，任务。管理的目的是 是一切<strong>有序、高效</strong>地进行。 管理活动，就有管理者和被管理者，就涉及到了<strong>权限</strong>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;目录内容&quot;&gt;&lt;a href=&quot;#目录内容&quot; class=&quot;headerlink&quot; title=&quot;目录内容&quot;&gt;&lt;/a&gt;目录内容&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Binder概述&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Binder C测试程序体验&lt;/p&gt;
+&lt;ol&gt;
+&lt;li</summary>
+      
+    
+    
+    
+    <category term="Framework" scheme="https://beancurdv.github.io/categories/Framework/"/>
+    
+    <category term="Binder" scheme="https://beancurdv.github.io/categories/Binder/"/>
+    
+    
+    <category term="binder" scheme="https://beancurdv.github.io/tags/binder/"/>
+    
+  </entry>
   
   <entry>
     <title>OS微内核</title>
