@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beancurdv.github.io/2023/10/17/Frida%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2023-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://beancurdv.github.io/2023/10/09/binder%E7%9B%AE%E5%BD%95/</loc>
     
     <lastmod>2023-10-09</lastmod>
@@ -76,7 +85,7 @@
 
   <url>
     <loc>https://beancurdv.github.io/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,49 +93,49 @@
   
   <url>
     <loc>https://beancurdv.github.io/tags/OS/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/Kernel/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/Framework/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/Android/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/zfc/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/123/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/tags/binder/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -135,84 +144,84 @@
   
   <url>
     <loc>https://beancurdv.github.io/categories/OS/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/Android/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/OS/Linux/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/Android/Framework/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/OS/Linux/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/Kernel/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/Framework/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beancurdv.github.io/categories/Binder/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
